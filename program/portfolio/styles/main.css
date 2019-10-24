@@ -1,6 +1,45 @@
 header {
-  background: url(/Users/josephwhite/program/portfolio/styles/images/Hero.jpg) center / cover;
+  background: url(../styles/images/Hero.jpg) center / cover;
   height: 60vh;
   justify-content: center;
   text-align: center;
+}
+slogan {
+  font-weight: 1.6 rem;
+}
+
+main {
+  max-width: 900px;
+}
+
+.project-description{
+  padding-left: 0;
+}
+
+.project img {
+  width: 100%;
+}
+
+footer.mdl-mini-footer {
+  bottom: 0;
+  padding: 0.5 rem;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+footer.mdl-mini-footer > ul {
+  margin: auto;
+  font-size: 3rem;
+}
+
+@media screen and (max-width: 1024px) {
+  header.mdl-layout__header{
+    display: flex;
+  }
+}
+}
+
+body {
+  padding-bottom: 5rem;
 }
