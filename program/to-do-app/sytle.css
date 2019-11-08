@@ -31,7 +31,8 @@ body {
 
 body > h1 {
   font-family: serif;
-  background-color: pink;
+  background-color: #00ffff;
+  border: black;
 
 }
 
