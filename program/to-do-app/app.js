@@ -1,6 +1,6 @@
 function onReady() {
   const addToDoForm = document.getElementById('addToDoForm');
-  const toDos = [];
+  let toDos = [];
   let id = 0;
 
 function createNewToDo() {
@@ -32,7 +32,7 @@ function createNewToDo() {
 
       deleteButton.addEventListener('click', event => {
        alert(toDo.title)
-       toDos =toDos.filter(functio(item){
+       toDos =toDos.filter(function(item){
          return item.id !== toDo.id
        })
        renderTheUI();
@@ -47,7 +47,7 @@ function createNewToDo() {
     });
   }
 
-addToDoForm.addEventListener('submit',  => {
+addToDoForm.addEventListener('submit', ()  => {
 
     event.preventDefault();
     createNewToDo();
